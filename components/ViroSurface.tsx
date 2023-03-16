@@ -96,10 +96,10 @@ export class ViroSurface extends ViroBase<Props> {
 }
 
 var VRTSurface = requireNativeComponent(
-  "VRTQuad",
-  // @ts-ignore
-  ViroSurface,
-  {
+    "VRTSurface",
+    // @ts-ignore
+    ViroSurface,
+    {
     nativeOnly: {
       canHover: true,
       canClick: true,

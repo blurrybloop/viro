@@ -40,15 +40,15 @@ var mathRandomOffset = 0;
  */
 class ViroVRSceneNavigator extends React.Component {
     sceneNavigator = {
-        push: this.push,
-        pop: this.pop,
-        popN: this.popN,
-        jump: this.jump,
-        replace: this.replace,
+        push: this.push.bind(this),
+        pop: this.pop.bind(this),
+        popN: this.popN.bind(this),
+        jump: this.jump.bind(this),
+        replace: this.replace.bind(this),
         // exitViro: this.exitViro, // not defined?
-        project: this._project,
-        unproject: this._unproject,
-        recenterTracking: this._recenterTracking,
+        project: this._project.bind(this),
+        unproject: this._unproject.bind(this),
+        recenterTracking: this._recenterTracking.bind(this),
         viroAppProps: {},
     };
     _component = null;
